@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>surveyForm</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/css/bootstrap.min.css" integrity="sha384-r4NyP46KrjDleawBgD5tp8Y7UzmLA05oM1iAEQ17CSuDqnUK2+k9luXQOfXJCJ4I" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1 id="title">Survey form for BSP SANSD</h1>
+    <p id="description">It will help us do more relevant stuffs.</p>
+
+        <!-- Form starts -->
+
+    <form id="survey-form">
+
+        <div class="container">
+
+        <label for="name" id="name-label">
+            Name
+            <div class="input-group mb-3">
+            <input type="text" name="name" id="name" class="form-control" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter your Name" required>
+            </div>
+        </label><br>
+          
+
+        <label for="email" id="email-label">Email
+            <div class="input-group mb-3">
+                <input type="email" class="form-control" id="email" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter your Email" required>
+                </div>
+        </label><br>
+        <label for="quantity" id="number-label">Age
+            <div class="input-group mb-3">
+                <input type="number" class="form-control" id="number" aria-label="Sizing example input" aria-describedby="inputGroup-sizing-default" placeholder="Enter your Age" min="13" max="65">
+                </div>
+        </label><br><br>
+        <label style="margin-top: -12px;" for="status">Your current employment status
+            <select class="mb-2 form-control" name="status" id="dropdown">
+                <option value="select">Select</option>
+                <option value="student">Student</option>
+                <option value="govt">Government Sector</option>
+                <option value="private">Private Sector</option>
+                <option value="unemployed">Unemployed</option>
+                <option value="self">Self Employed</option>
+            </select>
+        </label> <br><br>
+        <label for="radio">Would you recommend our page to your friends? <br>
+            <input type="radio" name="suggest" value="yes">
+            <label for="yes">For sure</label> <br>
+            <input type="radio" name="suggest" value="no">
+            <label for="no">Not gonna happen</label><br>
+            <input type="radio" name="suggest" value="maybe">
+            <label for="maybe">I will think over it</label><br>
+        </label> <br><br>
+
+        <label for="checks">What would you like to see in our blog? <br>
+        <input type="checkbox" name="travel" value="travel">
+        <label for="travel">More travel blogs</label><br>
+        <input type="checkbox" name="local" value="local">
+        <label for="local">More local sights</label><br>
+        <input type="checkbox" name="nature" value="nature">
+        <label for="nature">More nature related blogs</label><br>
+        <input type="checkbox" name="discover" value="discover">
+        <label for="discover">To discover new places</label><br>
+        <input type="checkbox" name="all" value="all">
+        <label for="all">All of the above</label><br>
+     </label><br> <br>
+        
+        <label for="comment">Any additional comments?</label><br>
+        <textarea style="margin-top: 3px;" name="comment" id="comment" cols="64" rows="5"></textarea> <br> <br>
+
+        <button id="submit" type="submit" class="btn btn-outline-info btn-lg btn-block">Submit</button>
+     </div>
+    </form>
+        <!-- Optional JavaScript -->
+    <!-- Popper.js first, then Bootstrap JS -->
+            <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.min.js" integrity="sha384-oesi62hOLfzrys4LxRF63OJCXdXDipiYWBnvTl9Y9/TRlw5xlKIEHpNyvvDShgf/" crossorigin="anonymous"></script>
+</body>
+</html>
